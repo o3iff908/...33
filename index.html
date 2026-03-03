@@ -1,238 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>EPC Solutions</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPC Solutions</title>
 
-<!-- Swiper Slider -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<section class="hero">
+    
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">G<span>P</span>C Solutions</div>
 
-<header class="navbar">
-    <div class="logo">EPC</div>
-    <nav id="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">About</a>
-        <a href="#" class="btn">Contact</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services ▼</a></li>
+        <li><a href="#">About Us ▼</a></li>
+        <li><a href="#" class="btn-contact">Contact Us</a></li>
+      </ul>
+
+      <div class="menu-toggle" id="menuToggle">
+        ☰
+      </div>
     </nav>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-</header>
 
-<!-- HERO -->
-<div style="box-shadow: 0 10px 30px rgba(0,0,0,0.3);"></div>
-<section class="hero reveal">
-    <div class="overlay">
-        <h1>Engineered Solutions.<br>Proven Delivery.</h1>
-        <p>Your Trusted Engineering Partner</p>
-        <button>Get Started</button>
+    <!-- HERO CONTENT -->
+    <div class="hero-content">
+      <h1>
+        Engineered Solutions.<br>
+        Proven Delivery
+      </h1>
+      <p>
+        Your Trusted Partner Delivering Engineering, Execution And Performance.
+      </p>
     </div>
+
 </section>
 
-<!-- ABOUT US SLIDER -->
-<section class="about reveal">
-    <h2>About us</h2>
+<section class="about">
+  <div class="about-container">
 
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
+    <!-- Images Side -->
+    <div class="about-images">
+      <div class="image-main">
+        <img src="about1.jpg" alt="Team Engineers">
+      </div>
 
-            <div class="swiper-slide card">
-                <h3>Renewable Energy</h3>
-                <p>Offshore wind & clean energy projects.</p>
-            </div>
-
-            <div class="swiper-slide card">
-                <h3>Project Services</h3>
-                <p>Engineering & construction solutions.</p>
-            </div>
-
-            <div class="swiper-slide card">
-                <h3>Filtration Systems</h3>
-                <p>Industrial filtration for oil & gas.</p>
-            </div>
-
-            <div class="swiper-slide card">
-                <h3>Agency Services</h3>
-                <p>Procurement & offshore support.</p>
-            </div>
-
-        </div>
+      <div class="image-small">
+        <img src="about2.jpg" alt="Project Planning">
+      </div>
     </div>
-    <nav id="nav-links">
-        <a href="#" class="btn">Contact</a>
-    </nav>
+
+    <!-- Content Side -->
+    <div class="about-content">
+      <h2>About EPC Solutions</h2>
+
+      <p>
+        EPC Solutions is a services and consultancy company that provides 
+        construction and project management support to the energy, offshore 
+        and marine sectors. No matter its size or complexity, our multi-discipline 
+        team of industry professionals ensure that your project is delivered in 
+        line with your requirements, budget and timeline.
+      </p>
+
+      <p>
+        Our range of services and resources guarantees the successful execution 
+        of offshore and onshore projects.
+      </p>
+
+      <a href="#" class="btn-primary">Get Started</a>
+    </div>
+
+    </div>
 </section>
 
 <section class="services">
-    <div class="overlay"></div>
-    <div class="container">
-        <p class="subtitle">Our Services</p>
-        <h2 class="title">
-            High Performance Supply & Services<br>
-            For Multiple Industries!
-        </h2>
-        <div class="cards">
-            <!-- Card 1 -->
-            <div class="card">
-                <img src="images/Service1.jpg" alt="">
-                <div class="card-content">
-                    <h3>RENEWABLE ENERGY</h3>
-                    <p>EPC Solutions provides Project Risk Management services for leading offshore wind energy projects.</p>
-                    <a href="#">Learn More →</a>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="card">
-                <img src="images/Service2.png" alt="">
-                <div class="card-content">
-                    <h3>PROJECT SERVICES</h3>
-                    <p>EPC Solutions provides a wide range of engineering, procurement and construction services.</p>
-                    <a href="#">Learn More →</a>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="card">
-                <img src="images/Service3.png" alt="">
-                <div class="card-content">
-                    <h3>FILTRATION SERVICES</h3>
-                    <p>EPC Solutions is the Middle East agent for advanced water treatment process business.</p>
-                    <a href="#">Learn More →</a>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="card">
-                <img src="images/Service4.png" alt="">
-                <div class="card-content">
-                    <h3>TERMINAL SERVICES</h3>
-                    <p>EPC Solutions and its European based partner provide full range of marine services.</p>
-                    <a href="#">Learn More →</a>
-                </div>
-            </div>
-            <!-- Card 5 -->
-            <div class="card">
-                <img src="images/Service5.png" alt="">
-                <div class="card-content">
-                    <h3>AGENCY SERVICES</h3>
-                    <p>EPC Solutions provides engineering, procurement and construction services to energy sectors.</p>
-                    <a href="#">Learn More →</a>
-                </div>
-            </div>
-        </div>
+
+  <div class="services-overlay"></div>
+
+  <div class="services-container">
+    
+    <div class="section-title">
+      <span>Our Services</span>
+      <h2>
+        High Performance Supply & Services <br>
+        For Multiple Industries!
+      </h2>
     </div>
+
+    <div class="services-grid">
+
+      <!-- Card 1 -->
+      <div class="service-card">
+        <img src="service1.jpg" alt="">
+        <div class="card-content">
+          <h3>Renewable Energy</h3>
+          <p>
+            EPC Solutions provides Project Risk Management services for floating offshore wind energy projects.
+          </p>
+          <a href="#">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card">
+        <img src="service2.jpg" alt="">
+        <div class="card-content">
+          <h3>Project Services</h3>
+          <p>
+            Engineering, procurement and construction services with support through every phase.
+          </p>
+          <a href="#">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card">
+        <img src="service3.jpg" alt="">
+        <div class="card-content">
+          <h3>Filtration Services</h3>
+          <p>
+            Middle East agent for Amazon Filters Ltd for oil, gas and water treatment process business.
+          </p>
+          <a href="#">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-card">
+        <img src="service4.jpg" alt="">
+        <div class="card-content">
+          <h3>Terminal Services</h3>
+          <p>
+            Full range of CALM buoy and terminal services across the Middle East region.
+          </p>
+          <a href="#">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="service-card">
+        <img src="service5.jpg" alt="">
+        <div class="card-content">
+          <h3>Agency Services</h3>
+          <p>
+            Engineering, procurement and construction services to energy and marine sectors.
+          </p>
+          <a href="#">Learn More →</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
 <section class="work">
-    <div class="overlay"></div>
-    <div class="container">
-        <p class="subtitle">
-            How we work
-        </p>
-        <h2 class="title">
-            Clear Vision. Precise Action. Proven Impact.
-        </h2>
+  <div class="container">
 
-            <div class="box">Design Review & Validation</div>
-            <div class="box">Build Strategy Development</div>
-            <div class="box">Build Location Selection</div>
-            <div class="box">Vendor & Sub Contractor Selection</div>
+    <div class="work-title">
+      <h2>How We Work</h2>
+    </div>
 
-            <div class="box">Materials & Process Optimization</div>
-            <div class="box">Load-Out & Transportation Engineering</div>
-            <div class="box">Cost & Schedule Management</div>
-            <div class="box">Risk & Contingency Planning</div>
+    <div class="work-steps">
 
+      <div class="step">
+        <div class="icon">
+          <img src="assets/icons/design.png" alt="">
         </div>
+        <p>Design Review & Validation</p>
+      </div>
+
+      <div class="step">
+        <div class="icon">
+          <img src="assets/icons/strategy.png" alt="">
+        </div>
+        <p>Build Strategy Development</p>
+      </div>
+
+      <div class="step">
+        <div class="icon">
+          <img src="assets/icons/location.png" alt="">
+        </div>
+        <p>Build Location Selection</p>
+      </div>
+
+      <div class="step">
+        <div class="icon">
+          <img src="assets/icons/vendor.png" alt="">
+        </div>
+        <p>Vendor & Sub Contractor Selection</p>
+      </div>
+
+      <div class="step">
+        <div class="icon">
+          <img src="assets/icons/materials.png" alt="">
+        </div>
+        <p>Materials & Process Optimization</p>
+      </div>
+
+      <div class="step">
+        <div class="icon">
+          <img src="assets/icons/risk.png" alt="">
+        </div>
+        <p>Risk & Contingency Planning</p>
+      </div>
+
     </div>
+
+  </div>
+
+  <!-- Custom Gallery -->
+    <div class="work-gallery-grid">
+
+      <div class="item large">
+        <img src="g1.jpg" alt="">
+        <div class="circle-btn">↗</div>
+      </div>
+
+      <div class="item">
+        <img src="g2.jpg" alt="">
+      </div>
+
+      <div class="item">
+        <img src="g3.jpg" alt="">
+      </div>
+
+      <div class="item">
+        <img src="g4.jpg" alt="">
+      </div>
+
+      <div class="item wide">
+        <img src="g5.jpg" alt="">
+      </div>
+
+    </div>
+
+    <!-- Button -->
+    <div class="work-btn">
+      <a href="#" class="btn-outline">CONNECT WITH US</a>
+    </div>
+
+  </div>
 </section>
 
-<!--<section>
+<section class="partners">
 
-  <div class="card">
-    <div class="card__img">
-      <img src="images/Service1.jpg">
-      <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>5</span>
-      <div class="card__overlay">
-        <h2>Service1</h2>
-        <p>Eiffel Tower</p>
+  <div class="partners-container">
+
+    <h2 class="partners-title">OUR PARTNERS</h2>
+
+    <div class="partners-wrapper">
+
+      <!-- Background Image -->
+      <div class="partners-image">
+        <img src="assets/images/partners-bg.jpg" alt="">
       </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card__img">
-      <img src="images/Service1.jpg" alt="Colosseum">
-      <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>4.7</span>
-      <div class="card__overlay">
-        <h2>Service2
-        </h2>
-        <p>Colosseum</p>
+
+      <!-- Left Card -->
+      <div class="partner-card left">
+        <h3 class="brand red">Amazon Filters</h3>
+        <p>
+          EPC Solutions Are The Middle East Agents For Amazon Filters Ltd
+          For Its Oil And Gas And Associated Water Treatment Process
+          Business Providing An Extensive Range Of Pleated, Depth And Bag
+          Filters For Liquids, Gases And Air.
+        </p>
+        <a href="#" class="btn-partner">Learn More</a>
       </div>
+
+      <!-- Center Image -->
+       <div class="partners-image">
+        <img src="assets/images/partners-bg.jpg" alt="">
     </div>
-  </div>
-  <div class="card">
-    <div class="card__img">
-      <img src="images/Service3.png" alt="Pisa Tower">
-      <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>4.3</span>
-      <div class="card__overlay">
-        <h2>Service3</h2>
-        <p>Pisa Tower</p>
+
+      <!-- Right Card -->
+      <div class="partner-card right">
+        <img src="assets/images/monobuoy-logo.png" class="partner-logo" alt="">
+        <p>
+          EPC Solutions Are The Middle East Agents For The Monobuoy
+          Company Who Design, Build And Install Turntable And Turret Type
+          CALM Buoys.
+        </p>
+        <a href="#" class="btn-partner">Learn More</a>
       </div>
+
     </div>
-  </div>
-  <div class="card">
-    <div class="card__img">
-      <img src="images/Service4.png" alt="">
-      <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>4.8</span>
-      <div class="card__overlay">
-        <h2>Service4</h2>
-        <p>Statue of Liberty</p>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card__img">
-      <img src="images/Service5.png" alt="Sydney Opera House">
-      <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>5</span>
-      <div class="card__overlay">
-        <h2>Service5</h2>
-        <p>Sydney Opera House</p>
-      </div>
-    </div>
+
   </div>
 
-</section>-->
-
-<!-- VIDEO SECTION -->
-<section class="video-section reveal">
-    <video controls>
-        <source src="" type="video/mp4">
-    </video>
 </section>
 
-<!-- CTA -->
-<section class="cta reveal">
-    <h2>Let’s Build Something Great Together</h2>
-    <button>Contact Us</button>
-</section>
 
-<footer>
-    <p>© 2026 EPC Solutions</p>
-</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="script.js"></script>
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
