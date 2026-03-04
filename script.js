@@ -1,77 +1,79 @@
-// ===== Mobile Menu Toggle =====
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+/* ============================================================
+   EPC Solutions — Renewable Energy  |  script.js
+   ============================================================ */
 
-menuToggle.addEventListener("click", () => {
-  menuToggle.classList.toggle("active");
-  navLinks.classList.toggle("active");
-});
+(function () {
+  "use strict";
 
-// Close menu when clicking a link
-navLinks.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", () => {
-    menuToggle.classList.remove("active");
-    navLinks.classList.remove("active");
+  // ---------- Mobile menu ----------
+  const hamburger = document.getElementById("hamburger");
+  const navLinks  = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("open");
+    navLinks.classList.toggle("open");
   });
-});
 
-// Close menu when clicking outside
-document.addEventListener("click", (e) => {
-  if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
-    menuToggle.classList.remove("active");
-    navLinks.classList.remove("active");
-  }
-});
-
-// ===== Scroll Animations =====
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: "0px 0px -50px 0px"
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
-  });
-}, observerOptions);
-
-// Animate elements on scroll
-document.addEventListener("DOMContentLoaded", () => {
-  const animateElements = document.querySelectorAll(
-    ".intro-card, .service-item, .service-detail, .cta-container, .footer-col"
+  // Close on link click
+  navLinks.querySelectorAll("a").forEach(a =>
+    a.addEventListener("click", () => {
+      hamburger.classList.remove("open");
+      navLinks.classList.remove("open");
+    })
   );
 
-  animateElements.forEach((el, index) => {
-    el.style.opacity = "0";
-    el.style.transform = "translateY(30px)";
-    el.style.transition = `opacity 0.6s ease ${index * 0.08}s, transform 0.6s ease ${index * 0.08}s`;
-    observer.observe(el);
+  // Close on outside click
+  document.addEventListener("click", e => {
+    if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+      hamburger.classList.remove("open");
+      navLinks.classList.remove("open");
+    }
   });
-});
 
-// Add visible class styles
-const style = document.createElement("style");
-style.textContent = `
-  .visible {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-  }
-`;
-document.head.appendChild(style);
+  // ---------- Navbar scroll effect ----------
+  const navbar = document.getElementById("navbar");
+  let ticking = false;
 
-// ===== Navbar background on scroll =====
-const navbar = document.querySelector(".navbar");
+  window.addEventListener("scroll", () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        if (window.scrollY > 60) {
+          navbar.style.background = "rgba(10,21,37,.95)";
+          navbar.style.backdropFilter = "blur(12px)";
+          navbar.style.boxShadow = "0 2px 20px rgba(0,0,0,.25)";
+        } else {
+          navbar.style.background = "transparent";
+          navbar.style.backdropFilter = "none";
+          navbar.style.boxShadow = "none";
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    navbar.style.background = "rgba(10, 22, 40, 0.95)";
-    navbar.style.backdropFilter = "blur(10px)";
-    navbar.style.transition = "background 0.3s ease";
-  } else {
-    navbar.style.background = "transparent";
-    navbar.style.backdropFilter = "none";
-  }
-});
+  // ---------- Scroll-reveal animations ----------
+  const animEls = document.querySelectorAll("[data-animate]");
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+  );
+
+  animEls.forEach(el => observer.observe(el));
+
+  // Stagger detail-card children
+  document.querySelectorAll(".services-details .detail-card").forEach((card, i) => {
+    card.style.setProperty("--i", i);
+    card.setAttribute("data-animate", "");
+    observer.observe(card);
+  });
+
+})();

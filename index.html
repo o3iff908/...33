@@ -3,142 +3,171 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EPC Solutions - Renewable Energy</title>
+  <title>EPC Solutions — Renewable Energy</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== HERO SECTION ===== -->
-  <section class="hero">
-    <nav class="navbar">
-      <div class="logo">
-        <span class="logo-circle">
-          <span class="logo-e">e</span><span class="logo-p">p</span><span class="logo-c">c</span>
-        </span>
-      </div>
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <a href="#" class="logo">
+        <svg class="logo-svg" viewBox="0 0 60 60" width="48" height="48">
+          <circle cx="30" cy="30" r="28" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+          <text x="10" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="700">
+            <tspan fill="#e74c3c">e</tspan><tspan fill="#3498db">p</tspan><tspan fill="#2ecc71">c</tspan>
+          </text>
+        </svg>
+      </a>
+
       <ul class="nav-links" id="navLinks">
-        <li><a href="#">Home</a></li>
+        <li><a href="#" class="nav-active">Home</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact Us</a></li>
-        <li><a href="#" class="btn-contact">Careers</a></li>
+        <li><a href="#" class="btn-nav">Careers</a></li>
       </ul>
-      <div class="menu-toggle" id="menuToggle">
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </nav>
 
-    <div class="hero-content">
-      <h1>Renewable Energy</h1>
+    <!-- Hero heading -->
+    <div class="hero-body">
+      <h1 class="hero-title">Renewable Energy</h1>
     </div>
 
-    <div class="hero-wave">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <path d="M0,80 C360,120 720,20 1440,80 L1440,120 L0,120 Z" fill="#0a1628"/>
+    <!-- Industrial silhouette strip -->
+    <div class="hero-silhouette"></div>
+
+    <!-- Wave divider -->
+    <div class="hero-wave-wrap">
+      <svg class="hero-wave" viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,50 C300,80 600,10 900,50 C1100,75 1300,30 1440,55 L1440,80 L0,80Z" fill="#0c1e35"/>
       </svg>
     </div>
   </section>
 
-  <!-- ===== INTRO / DESCRIPTION SECTION ===== -->
-  <section class="intro">
-    <div class="intro-container">
-      <div class="intro-card">
-        <h2>Renewable Energy and Offshore<br>Advanced Engineering Solutions</h2>
-        <p>
-          With a growing focus on floating offshore and subsea renewable energy infrastructure, EPC Solutions also provides
-          high-quality engineering, construction and project management support services to renewable energy developments.
-        </p>
-        <p>
-          We have a multi-discipline team of industry professionals throughout the EPC lifecycle including engineering and
-          design, procurement, construction, installation, commissioning and project controls.
-        </p>
-        <p>
-          We collaborate with project developers, asset operators, EPC and EPCI contractors that renewable energy projects are delivered
-          and commissioned in line with the project requirements, budget and timeline.
-        </p>
-      </div>
+  <!-- ========== INTRO CARD ========== -->
+  <section class="intro" id="intro">
+    <div class="intro-card" data-animate>
+      <h2>Renewable Energy and Offshore<br>Advanced Engineering Solutions</h2>
+      <div class="intro-divider"></div>
+      <p>With a growing focus on floating offshore and subsea renewable energy infrastructure, EPC Solutions also provides high-quality engineering, construction and project management support services to renewable energy developments.</p>
+      <p>We have a multi-discipline team of industry professionals throughout the EPC lifecycle including engineering and design, procurement, construction, installation, commissioning and project controls.</p>
+      <p>We collaborate with project developers, asset operators, EPC and EPCI contractors to ensure that renewable energy projects are delivered and commissioned in line with the project requirements, budget and timeline.</p>
     </div>
   </section>
 
-  <!-- ===== RENEWABLE ENERGY SERVICE (with image) ===== -->
-  <section class="re-service">
-    <div class="re-service-container">
-      <h2 class="section-heading">Renewable Energy Service</h2>
+  <!-- ========== RENEWABLE ENERGY SERVICE ========== -->
+  <section class="services-section" id="services">
+    <div class="services-wrap">
 
-      <div class="re-service-top">
-        <div class="re-service-image">
-          <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=600&h=400&fit=crop" alt="Wind turbines at sea">
+      <h2 class="services-heading" data-animate>Renewable Energy Service</h2>
+
+      <!-- Top row: image + sidebar list -->
+      <div class="services-top" data-animate>
+        <div class="services-img">
+          <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=700&h=460&fit=crop&q=80" alt="Offshore wind turbines">
         </div>
-        <div class="re-service-list-right">
-          <div class="service-item">
-            <h4>Renewable Energy Service</h4>
-            <p>Expert front-end planning for floating platform design, construction and installation.</p>
+        <div class="services-sidebar">
+          <div class="sidebar-item">
+            <div class="sidebar-dot"></div>
+            <div>
+              <h4>Renewable Energy Service</h4>
+              <p>Expert front-end planning for floating platform design, construction and installation.</p>
+            </div>
           </div>
-          <div class="service-item">
-            <h4>Full Project Lifecycle Support</h4>
-            <p>Full lifecycle from front-end design to installation and operational readiness.</p>
+          <div class="sidebar-item">
+            <div class="sidebar-dot"></div>
+            <div>
+              <h4>Full Project Lifecycle Support</h4>
+              <p>Full lifecycle from front-end design to installation and operational readiness.</p>
+            </div>
           </div>
-          <div class="service-item">
-            <h4>Floating Platform Expertise</h4>
-            <p>Custom solutions for durable, efficient renewable energy platforms.</p>
+          <div class="sidebar-item">
+            <div class="sidebar-dot"></div>
+            <div>
+              <h4>Floating Platform Expertise</h4>
+              <p>Custom solutions for durable, efficient renewable energy platforms.</p>
+            </div>
           </div>
-          <div class="service-item">
-            <h4>Anchorage &amp; Mooring Systems</h4>
-            <p>Innovative anchorage, mooring, and turret solutions for marine stability.</p>
+          <div class="sidebar-item">
+            <div class="sidebar-dot"></div>
+            <div>
+              <h4>Anchorage &amp; Mooring Systems</h4>
+              <p>Innovative anchorage, mooring, and turret solutions for marine stability.</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="re-service-bottom">
-        <div class="service-detail">
+      <!-- Bottom detail cards -->
+      <div class="services-details" data-animate>
+        <div class="detail-card">
+          <span class="detail-icon">&#9672;</span>
           <h4>Renewable Energy Service</h4>
           <p>Expert front-end planning for floating platform design, construction and installation projects across the renewable energy sector.</p>
         </div>
-        <div class="service-detail">
+        <div class="detail-card">
+          <span class="detail-icon">&#9672;</span>
           <h4>Full Project Lifecycle Support</h4>
           <p>Full lifecycle from front-end design to installation and operational readiness.</p>
         </div>
-        <div class="service-detail">
+        <div class="detail-card">
+          <span class="detail-icon">&#9672;</span>
           <h4>Floating Platform Expertise</h4>
           <p>Custom solutions for durable, efficient renewable energy platforms.</p>
         </div>
-        <div class="service-detail">
+        <div class="detail-card">
+          <span class="detail-icon">&#9672;</span>
           <h4>Anchorage &amp; Mooring Systems</h4>
           <p>Innovative anchorage, mooring, and turret solutions for marine stability.</p>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- ===== CTA SECTION ===== -->
-  <section class="cta">
-    <div class="cta-container">
+  <!-- ========== CTA ========== -->
+  <section class="cta" id="cta">
+    <div class="cta-bg"></div>
+    <div class="cta-content" data-animate>
       <h2>Let's Build Something Great Together</h2>
       <a href="#" class="btn-cta">Contact Us</a>
     </div>
+    <!-- Wave top -->
+    <div class="cta-wave-top">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,40 C400,0 1000,60 1440,20 L1440,0 L0,0Z" fill="#f4f5f7"/></svg>
+    </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-wave">
-        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-          <path d="M0,60 C480,100 960,0 1440,60 L1440,0 L0,0 Z" fill="#0d2137"/>
-        </svg>
-      </div>
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <!-- Wave -->
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,40 C360,70 720,0 1080,40 C1260,55 1380,25 1440,35 L1440,0 L0,0Z" fill="#0d2137"/></svg>
     </div>
-    <div class="footer-content">
-      <div class="footer-col footer-brand">
-        <div class="footer-logo">
-          <span class="logo-circle small">
-            <span class="logo-e">e</span><span class="logo-p">p</span><span class="logo-c">c</span>
-          </span>
-        </div>
-        <p class="footer-tagline">EPC — Powered By EPCSolving</p>
-        <p class="footer-sub">Global EPC Hub</p>
-        <p class="footer-sub">Innovative Solutions</p>
+
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-col brand-col">
+        <svg class="footer-logo-svg" viewBox="0 0 60 60" width="42" height="42">
+          <circle cx="30" cy="30" r="28" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+          <text x="10" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="700">
+            <tspan fill="#e74c3c">e</tspan><tspan fill="#3498db">p</tspan><tspan fill="#2ecc71">c</tspan>
+          </text>
+        </svg>
+        <p class="brand-tagline">EPC — Powered By EPCSolving</p>
+        <p class="brand-sub">Global EPC Hub</p>
+        <p class="brand-sub">Innovative Solutions</p>
       </div>
+
+      <!-- Company -->
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
@@ -147,6 +176,8 @@
           <li><a href="#">Key Wholesale</a></li>
         </ul>
       </div>
+
+      <!-- Contact -->
       <div class="footer-col">
         <h4>Contact Details</h4>
         <ul>
@@ -155,14 +186,17 @@
           <li>+0 (000) 000 0000</li>
         </ul>
       </div>
+
+      <!-- Document -->
       <div class="footer-col">
         <h4>Document</h4>
         <ul>
-          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
           <li><a href="#">Website Privacy Policy</a></li>
         </ul>
       </div>
     </div>
+
     <div class="footer-bottom">
       <p>&copy; 2026 EPC Solutions. All Rights Reserved.</p>
     </div>
