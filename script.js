@@ -1,49 +1,44 @@
 /* ============================================================
    EPC Solutions — Renewable Energy  |  script.js
    ============================================================ */
-
 (function () {
   "use strict";
 
-  // ---------- Mobile menu ----------
-  const hamburger = document.getElementById("hamburger");
-  const navLinks  = document.getElementById("navLinks");
+  /* ---------- Mobile menu ---------- */
+  var hamburger = document.getElementById("hamburger");
+  var navLinks = document.getElementById("navLinks");
 
-  hamburger.addEventListener("click", () => {
+  hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("open");
     navLinks.classList.toggle("open");
   });
 
-  // Close on link click
-  navLinks.querySelectorAll("a").forEach(a =>
-    a.addEventListener("click", () => {
+  navLinks.querySelectorAll("a").forEach(function (a) {
+    a.addEventListener("click", function () {
       hamburger.classList.remove("open");
       navLinks.classList.remove("open");
-    })
-  );
+    });
+  });
 
-  // Close on outside click
-  document.addEventListener("click", e => {
+  document.addEventListener("click", function (e) {
     if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
       hamburger.classList.remove("open");
       navLinks.classList.remove("open");
     }
   });
 
-  // ---------- Navbar scroll effect ----------
-  const navbar = document.getElementById("navbar");
-  let ticking = false;
+  /* ---------- Navbar scroll ---------- */
+  var navbar = document.querySelector(".navbar");
+  var ticking = false;
 
-  window.addEventListener("scroll", () => {
+  window.addEventListener("scroll", function () {
     if (!ticking) {
-      requestAnimationFrame(() => {
-        if (window.scrollY > 60) {
-          navbar.style.background = "rgba(10,21,37,.95)";
-          navbar.style.backdropFilter = "blur(12px)";
-          navbar.style.boxShadow = "0 2px 20px rgba(0,0,0,.25)";
+      requestAnimationFrame(function () {
+        if (window.scrollY > 50) {
+          navbar.style.background = "rgba(255,255,255,.95)";
+          navbar.style.boxShadow = "0 2px 16px rgba(0,0,0,.08)";
         } else {
           navbar.style.background = "transparent";
-          navbar.style.backdropFilter = "none";
           navbar.style.boxShadow = "none";
         }
         ticking = false;
@@ -52,28 +47,32 @@
     }
   });
 
-  // ---------- Scroll-reveal animations ----------
-  const animEls = document.querySelectorAll("[data-animate]");
+  /* ---------- Scroll reveal ---------- */
+  var targets = document.querySelectorAll(
+    ".intro-card, .services-row, .services-cards, .svc-card, .cta-body, .footer-col"
+  );
 
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
+  targets.forEach(function (el) {
+    el.classList.add("fade-up");
+  });
+
+  var observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
           observer.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    { threshold: 0.1, rootMargin: "0px 0px -30px 0px" }
   );
 
-  animEls.forEach(el => observer.observe(el));
+  targets.forEach(function (el) { observer.observe(el); });
 
-  // Stagger detail-card children
-  document.querySelectorAll(".services-details .detail-card").forEach((card, i) => {
-    card.style.setProperty("--i", i);
-    card.setAttribute("data-animate", "");
-    observer.observe(card);
+  /* Stagger service cards */
+  document.querySelectorAll(".svc-card").forEach(function (card, i) {
+    card.style.transitionDelay = (i * 0.08) + "s";
   });
 
 })();

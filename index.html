@@ -9,88 +9,85 @@
 </head>
 <body>
 
-  <!-- ========== HERO ========== -->
-  <section class="hero" id="hero">
-
-    <!-- Blue angled background on left -->
-    <div class="hero-blue-bg"></div>
+  <!-- ==================== HERO ==================== -->
+  <section class="hero">
+    <!-- Blue diagonal background -->
+    <div class="hero-blue"></div>
 
     <!-- Navbar -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
       <a href="#" class="logo">
         <img src="uploads/image.png" alt="EPC Solutions" class="logo-img">
       </a>
-
       <ul class="nav-links" id="navLinks">
-        <li><a href="#" class="nav-active">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact Us</a></li>
         <li><a href="#" class="btn-nav">Careers</a></li>
       </ul>
-
-      <button class="hamburger" id="hamburger" aria-label="Menu">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </nav>
 
-    <!-- Hero heading -->
-    <div class="hero-body">
-      <h1 class="hero-title">Renewable Energy</h1>
+    <!-- Title -->
+    <div class="hero-title-wrap">
+      <h1>Renewable Energy</h1>
     </div>
 
-    <!-- Center hero image -->
-    <div class="hero-image-wrap">
-      <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=1100&h=500&fit=crop&q=80" alt="Wind turbines at sea" class="hero-center-img">
+    <!-- Panoramic hero image (industrial/offshore with warm tint) -->
+    <div class="hero-panoramic">
+      <div class="hero-panoramic-overlay"></div>
+      <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=1200&h=340&fit=crop&q=80" alt="Offshore industrial">
     </div>
   </section>
 
-  <!-- ========== INTRO CARD ========== -->
-  <section class="intro" id="intro">
-    <div class="intro-card" data-animate>
+  <!-- ==================== INTRO ==================== -->
+  <section class="intro">
+    <div class="intro-card">
       <h2>Renewable Energy and Offshore<br>Advanced Engineering Solutions</h2>
-      <div class="intro-divider"></div>
+      <div class="intro-line"></div>
       <p>With a growing focus on floating offshore and subsea renewable energy infrastructure, EPC Solutions also provides high-quality engineering, construction and project management support services to renewable energy developments.</p>
       <p>We have a multi-discipline team of industry professionals throughout the EPC lifecycle including engineering and design, procurement, construction, installation, commissioning and project controls.</p>
       <p>We collaborate with project developers, asset operators, EPC and EPCI contractors to ensure that renewable energy projects are delivered and commissioned in line with the project requirements, budget and timeline.</p>
     </div>
   </section>
 
-  <!-- ========== RENEWABLE ENERGY SERVICE ========== -->
-  <section class="services-section" id="services">
-    <div class="services-wrap">
+  <!-- ==================== SERVICES ==================== -->
+  <section class="services">
+    <div class="services-inner">
+      <h2 class="services-title">Renewable Energy Service</h2>
 
-      <h2 class="services-heading" data-animate>Renewable Energy Service</h2>
-
-      <!-- Top row: image + sidebar list -->
-      <div class="services-top" data-animate>
-        <div class="services-img">
-          <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=700&h=460&fit=crop&q=80" alt="Offshore wind turbines">
+      <!-- Image + sidebar -->
+      <div class="services-row">
+        <div class="services-photo">
+          <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=640&h=440&fit=crop&q=80" alt="Wind turbines">
         </div>
-        <div class="services-sidebar">
-          <div class="sidebar-item">
-            <div class="sidebar-dot"></div>
+        <div class="services-list">
+          <div class="svc-item">
+            <div class="svc-dot"></div>
             <div>
               <h4>Renewable Energy Service</h4>
               <p>Expert front-end planning for floating platform design, construction and installation.</p>
             </div>
           </div>
-          <div class="sidebar-item">
-            <div class="sidebar-dot"></div>
+          <div class="svc-item">
+            <div class="svc-dot"></div>
             <div>
               <h4>Full Project Lifecycle Support</h4>
               <p>Full lifecycle from front-end design to installation and operational readiness.</p>
             </div>
           </div>
-          <div class="sidebar-item">
-            <div class="sidebar-dot"></div>
+          <div class="svc-item">
+            <div class="svc-dot"></div>
             <div>
               <h4>Floating Platform Expertise</h4>
               <p>Custom solutions for durable, efficient renewable energy platforms.</p>
             </div>
           </div>
-          <div class="sidebar-item">
-            <div class="sidebar-dot"></div>
+          <div class="svc-item">
+            <div class="svc-dot"></div>
             <div>
               <h4>Anchorage &amp; Mooring Systems</h4>
               <p>Innovative anchorage, mooring, and turret solutions for marine stability.</p>
@@ -99,63 +96,52 @@
         </div>
       </div>
 
-      <!-- Bottom detail cards -->
-      <div class="services-details" data-animate>
-        <div class="detail-card">
-          <span class="detail-icon">&#9672;</span>
+      <!-- Detail cards -->
+      <div class="services-cards">
+        <div class="svc-card">
           <h4>Renewable Energy Service</h4>
           <p>Expert front-end planning for floating platform design, construction and installation projects across the renewable energy sector.</p>
         </div>
-        <div class="detail-card">
-          <span class="detail-icon">&#9672;</span>
+        <div class="svc-card">
           <h4>Full Project Lifecycle Support</h4>
           <p>Full lifecycle from front-end design to installation and operational readiness.</p>
         </div>
-        <div class="detail-card">
-          <span class="detail-icon">&#9672;</span>
+        <div class="svc-card">
           <h4>Floating Platform Expertise</h4>
           <p>Custom solutions for durable, efficient renewable energy platforms.</p>
         </div>
-        <div class="detail-card">
-          <span class="detail-icon">&#9672;</span>
+        <div class="svc-card">
           <h4>Anchorage &amp; Mooring Systems</h4>
           <p>Innovative anchorage, mooring, and turret solutions for marine stability.</p>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ========== CTA ========== -->
-  <section class="cta" id="cta">
-    <div class="cta-bg"></div>
-    <div class="cta-content" data-animate>
+  <!-- ==================== CTA ==================== -->
+  <section class="cta">
+    <div class="cta-overlay"></div>
+    <div class="cta-wave">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,40 C400,0 1000,60 1440,15 L1440,0 L0,0Z" fill="#f4f5f7"/></svg>
+    </div>
+    <div class="cta-body">
       <h2>Let's Build Something Great Together</h2>
       <a href="#" class="btn-cta">Contact Us</a>
     </div>
-    <!-- Wave top -->
-    <div class="cta-wave-top">
-      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,40 C400,0 1000,60 1440,20 L1440,0 L0,0Z" fill="#f4f5f7"/></svg>
-    </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer" id="footer">
-    <!-- Wave -->
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
     <div class="footer-wave">
-      <svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,40 C360,70 720,0 1080,40 C1260,55 1380,25 1440,35 L1440,0 L0,0Z" fill="#0d2137"/></svg>
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,35 C360,60 720,5 1080,35 C1260,50 1380,20 1440,30 L1440,0 L0,0Z" fill="#0d2137"/></svg>
     </div>
-
     <div class="footer-grid">
-      <!-- Brand -->
-      <div class="footer-col brand-col">
-        <img src="uploads/image.png" alt="EPC Solutions" class="footer-logo-img">
-        <p class="brand-tagline">EPC — Powered By EPCSolving</p>
-        <p class="brand-sub">Global EPC Hub</p>
-        <p class="brand-sub">Innovative Solutions</p>
+      <div class="footer-col fcol-brand">
+        <img src="uploads/image.png" alt="EPC" class="footer-logo">
+        <p class="f-tagline">EPC — Powered By EPCSolving</p>
+        <p class="f-sub">Global EPC Hub</p>
+        <p class="f-sub">Innovative Solutions</p>
       </div>
-
-      <!-- Company -->
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
@@ -164,8 +150,6 @@
           <li><a href="#">Key Wholesale</a></li>
         </ul>
       </div>
-
-      <!-- Contact -->
       <div class="footer-col">
         <h4>Contact Details</h4>
         <ul>
@@ -174,8 +158,6 @@
           <li>+0 (000) 000 0000</li>
         </ul>
       </div>
-
-      <!-- Document -->
       <div class="footer-col">
         <h4>Document</h4>
         <ul>
@@ -184,7 +166,6 @@
         </ul>
       </div>
     </div>
-
     <div class="footer-bottom">
       <p>&copy; 2026 EPC Solutions. All Rights Reserved.</p>
     </div>
