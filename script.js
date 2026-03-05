@@ -1,6 +1,15 @@
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+const favoriteBtn = document.getElementById('favoriteBtn');
+const addToCartBtn = document.getElementById('addToCartBtn');
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+favoriteBtn.addEventListener('click', () => {
+    favoriteBtn.classList.toggle('active');
+});
+
+addToCartBtn.addEventListener('click', function() {
+    this.textContent = 'Added!';
+    this.classList.add('added');
+    setTimeout(() => {
+        this.textContent = 'Add to Cart';
+        this.classList.remove('added');
+    }, 1500);
 });

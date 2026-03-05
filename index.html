@@ -1,305 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GPC Solutions</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Crono - Product Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section class="hero">
-    
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="logo">G<span>P</span>C Solutions</div>
-
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services ▼</a></li>
-        <li><a href="#">About Us ▼</a></li>
-        <li><a href="#" class="btn-contact">Contact Us</a></li>
-      </ul>
-
-      <div class="menu-toggle" id="menuToggle">
-        ☰
-      </div>
-    </nav>
-
-    <!-- HERO CONTENT -->
-    <div class="hero-content">
-      <h1>
-        Engineered Solutions.<br>
-        Proven Delivery
-      </h1>
-      <p>
-        Your Trusted Partner Delivering Engineering, Execution And Performance.
-      </p>
-    </div>
-
-</section>
-
-<section class="about">
-  <div class="about-container">
-
-    <!-- Images Side -->
-    <div class="about-images">
-      <div class="image-main">
-        <img src="about1.jpg" alt="Team Engineers">
-      </div>
-
-      <div class="image-small">
-        <img src="about2.jpg" alt="Project Planning">
-      </div>
-    </div>
-
-    <!-- Content Side -->
-    <div class="about-content">
-      <h2>About EPC Solutions</h2>
-
-      <p>
-        EPC Solutions is a services and consultancy company that provides 
-        construction and project management support to the energy, offshore 
-        and marine sectors. No matter its size or complexity, our multi-discipline 
-        team of industry professionals ensure that your project is delivered in 
-        line with your requirements, budget and timeline.
-      </p>
-
-      <p>
-        Our range of services and resources guarantees the successful execution 
-        of offshore and onshore projects.
-      </p>
-
-      <a href="#" class="btn-primary">Get Started</a>
-    </div>
-
-    </div>
-</section>
-
-<section class="services">
-
-  <div class="services-overlay"></div>
-
-  <div class="services-container">
-    
-    <div class="section-title">
-      <span>Our Services</span>
-      <h2>
-        High Performance Supply & Services <br>
-        For Multiple Industries!
-      </h2>
-    </div>
-
-    <div class="services-grid">
-
-      <!-- Card 1 -->
-      <div class="service-card">
-        <img src="service1.jpg" alt="">
-        <div class="card-content">
-          <h3>Renewable Energy</h3>
-          <p>
-            EPC Solutions provides Project Risk Management services for floating offshore wind energy projects.
-          </p>
-          <a href="#">Learn More →</a>
+    <div class="product-card">
+        <button class="favorite-btn" id="favoriteBtn">
+            <svg viewBox="0 0 24 24" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+        </button>
+        
+        <div class="product-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Wrist_watch.svg/300px-Wrist_watch.svg.png" alt="Classic Crono Watch">
         </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="service-card">
-        <img src="service2.jpg" alt="">
-        <div class="card-content">
-          <h3>Project Services</h3>
-          <p>
-            Engineering, procurement and construction services with support through every phase.
-          </p>
-          <a href="#">Learn More →</a>
+        
+        <h2 class="product-name">CLASSIC CRONO</h2>
+        
+        <div class="rating">
+            <svg class="star filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <svg class="star filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <svg class="star filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <svg class="star filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <span class="review-count">(125 Reviews)</span>
         </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="service-card">
-        <img src="service3.jpg" alt="">
-        <div class="card-content">
-          <h3>Filtration Services</h3>
-          <p>
-            Middle East agent for Amazon Filters Ltd for oil, gas and water treatment process business.
-          </p>
-          <a href="#">Learn More →</a>
+        
+        <p class="product-description">Timeless elegance meets modern precision</p>
+        
+        <div class="product-price">$149<span>.99</span></div>
+        
+        <div class="button-group">
+            <button class="btn btn-add-cart" id="addToCartBtn">Add to Cart</button>
+            <button class="btn btn-buy-now">Buy Now</button>
         </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="service-card">
-        <img src="service4.jpg" alt="">
-        <div class="card-content">
-          <h3>Terminal Services</h3>
-          <p>
-            Full range of CALM buoy and terminal services across the Middle East region.
-          </p>
-          <a href="#">Learn More →</a>
-        </div>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="service-card">
-        <img src="service5.jpg" alt="">
-        <div class="card-content">
-          <h3>Agency Services</h3>
-          <p>
-            Engineering, procurement and construction services to energy and marine sectors.
-          </p>
-          <a href="#">Learn More →</a>
-        </div>
-      </div>
-
     </div>
 
-  </div>
-</section>
-
-<section class="work">
-  <div class="container">
-
-    <div class="work-title">
-      <h2>How We Work</h2>
-    </div>
-
-    <div class="work-steps">
-
-      <div class="step">
-        <div class="icon">
-          <img src="assets/icons/design.png" alt="">
-        </div>
-        <p>Design Review & Validation</p>
-      </div>
-
-      <div class="step">
-        <div class="icon">
-          <img src="assets/icons/strategy.png" alt="">
-        </div>
-        <p>Build Strategy Development</p>
-      </div>
-
-      <div class="step">
-        <div class="icon">
-          <img src="assets/icons/location.png" alt="">
-        </div>
-        <p>Build Location Selection</p>
-      </div>
-
-      <div class="step">
-        <div class="icon">
-          <img src="assets/icons/vendor.png" alt="">
-        </div>
-        <p>Vendor & Sub Contractor Selection</p>
-      </div>
-
-      <div class="step">
-        <div class="icon">
-          <img src="assets/icons/materials.png" alt="">
-        </div>
-        <p>Materials & Process Optimization</p>
-      </div>
-
-      <div class="step">
-        <div class="icon">
-          <img src="assets/icons/risk.png" alt="">
-        </div>
-        <p>Risk & Contingency Planning</p>
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- Custom Gallery -->
-    <div class="work-gallery-grid">
-
-      <div class="item large">
-        <img src="g1.jpg" alt="">
-        <div class="circle-btn">↗</div>
-      </div>
-
-      <div class="item">
-        <img src="g2.jpg" alt="">
-      </div>
-
-      <div class="item">
-        <img src="g3.jpg" alt="">
-      </div>
-
-      <div class="item">
-        <img src="g4.jpg" alt="">
-      </div>
-
-      <div class="item wide">
-        <img src="g5.jpg" alt="">
-      </div>
-
-    </div>
-
-    <!-- Button -->
-    <div class="work-btn">
-      <a href="#" class="btn-outline">CONNECT WITH US</a>
-    </div>
-
-  </div>
-</section>
-
-<section class="partners">
-
-  <div class="partners-container">
-
-    <h2 class="partners-title">OUR PARTNERS</h2>
-
-    <div class="partners-wrapper">
-
-      <!-- Background Image -->
-      <div class="partners-image">
-        <img src="assets/images/partners-bg.jpg" alt="">
-      </div>
-
-      <!-- Left Card -->
-      <div class="partner-card left">
-        <h3 class="brand red">Amazon Filters</h3>
-        <p>
-          EPC Solutions Are The Middle East Agents For Amazon Filters Ltd
-          For Its Oil And Gas And Associated Water Treatment Process
-          Business Providing An Extensive Range Of Pleated, Depth And Bag
-          Filters For Liquids, Gases And Air.
-        </p>
-        <a href="#" class="btn-partner">Learn More</a>
-      </div>
-
-      <!-- Center Image -->
-       <div class="partners-image">
-        <img src="assets/images/partners-bg.jpg" alt="">
-    </div>
-
-      <!-- Right Card -->
-      <div class="partner-card right">
-        <img src="assets/images/monobuoy-logo.png" class="partner-logo" alt="">
-        <p>
-          EPC Solutions Are The Middle East Agents For The Monobuoy
-          Company Who Design, Build And Install Turntable And Turret Type
-          CALM Buoys.
-        </p>
-        <a href="#" class="btn-partner">Learn More</a>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-  <!-- JS -->
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
