@@ -7,6 +7,11 @@
 
 body {
   background: #f4f4f4;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* ===== HERO SECTION ===== */
@@ -701,5 +706,17 @@ body {
   .work-gallery-grid .wide {
     grid-column: span 1;
     grid-row: span 1;
+  }
+
+  .partners-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    margin: 10px;
+  }
+
+  .hero-content {
+    margin-bottom: 80px;
   }
 }
