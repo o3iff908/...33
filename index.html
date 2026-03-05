@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GPC Solutions</title>
+  <title>EPC Solutions</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,17 +12,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section class="hero">
+<section class="hero" id="home">
     
     <!-- NAVBAR -->
     <nav class="navbar">
-      <div class="logo">G<span>P</span>C Solutions</div>
+      <div class="logo">E<span>P</span>C Solutions</div>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services ▼</a></li>
-        <li><a href="#">About Us ▼</a></li>
-        <li><a href="#" class="btn-contact">Contact Us</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services ▼</a></li>
+        <li><a href="#about">About Us ▼</a></li>
+        <li><a href="#contact" class="btn-contact">Contact Us</a></li>
       </ul>
 
       <div class="menu-toggle" id="menuToggle">
@@ -43,17 +43,17 @@
 
 </section>
 
-<section class="about">
+<section class="about" id="about">
   <div class="about-container">
 
     <!-- Images Side -->
     <div class="about-images">
       <div class="image-main">
-        <img src="about1.jpg" alt="Team Engineers">
+        <div class="placeholder-img" data-text="Engineering Team"></div>
       </div>
 
       <div class="image-small">
-        <img src="about2.jpg" alt="Project Planning">
+        <div class="placeholder-img small" data-text="Project Planning"></div>
       </div>
     </div>
 
@@ -80,7 +80,7 @@
     </div>
 </section>
 
-<section class="services">
+<section class="services" id="services">
 
   <div class="services-overlay"></div>
 
@@ -98,7 +98,7 @@
 
       <!-- Card 1 -->
       <div class="service-card">
-        <img src="service1.jpg" alt="">
+        <div class="service-img" data-service="1"></div>
         <div class="card-content">
           <h3>Renewable Energy</h3>
           <p>
@@ -110,7 +110,7 @@
 
       <!-- Card 2 -->
       <div class="service-card">
-        <img src="service2.jpg" alt="">
+        <div class="service-img" data-service="2"></div>
         <div class="card-content">
           <h3>Project Services</h3>
           <p>
@@ -122,7 +122,7 @@
 
       <!-- Card 3 -->
       <div class="service-card">
-        <img src="service3.jpg" alt="">
+        <div class="service-img" data-service="3"></div>
         <div class="card-content">
           <h3>Filtration Services</h3>
           <p>
@@ -134,7 +134,7 @@
 
       <!-- Card 4 -->
       <div class="service-card">
-        <img src="service4.jpg" alt="">
+        <div class="service-img" data-service="4"></div>
         <div class="card-content">
           <h3>Terminal Services</h3>
           <p>
@@ -146,7 +146,7 @@
 
       <!-- Card 5 -->
       <div class="service-card">
-        <img src="service5.jpg" alt="">
+        <div class="service-img" data-service="5"></div>
         <div class="card-content">
           <h3>Agency Services</h3>
           <p>
@@ -172,42 +172,42 @@
 
       <div class="step">
         <div class="icon">
-          <img src="assets/icons/design.png" alt="">
+          <img src="assets/icons/design.svg" alt="">
         </div>
         <p>Design Review & Validation</p>
       </div>
 
       <div class="step">
         <div class="icon">
-          <img src="assets/icons/strategy.png" alt="">
+          <img src="assets/icons/strategy.svg" alt="">
         </div>
         <p>Build Strategy Development</p>
       </div>
 
       <div class="step">
         <div class="icon">
-          <img src="assets/icons/location.png" alt="">
+          <img src="assets/icons/location.svg" alt="">
         </div>
         <p>Build Location Selection</p>
       </div>
 
       <div class="step">
         <div class="icon">
-          <img src="assets/icons/vendor.png" alt="">
+          <img src="assets/icons/vendor.svg" alt="">
         </div>
         <p>Vendor & Sub Contractor Selection</p>
       </div>
 
       <div class="step">
         <div class="icon">
-          <img src="assets/icons/materials.png" alt="">
+          <img src="assets/icons/materials.svg" alt="">
         </div>
         <p>Materials & Process Optimization</p>
       </div>
 
       <div class="step">
         <div class="icon">
-          <img src="assets/icons/risk.png" alt="">
+          <img src="assets/icons/risk.svg" alt="">
         </div>
         <p>Risk & Contingency Planning</p>
       </div>
@@ -220,24 +220,24 @@
     <div class="work-gallery-grid">
 
       <div class="item large">
-        <img src="g1.jpg" alt="">
+        <div class="gallery-img" data-gallery="1"></div>
         <div class="circle-btn">↗</div>
       </div>
 
       <div class="item">
-        <img src="g2.jpg" alt="">
+        <div class="gallery-img" data-gallery="2"></div>
       </div>
 
       <div class="item">
-        <img src="g3.jpg" alt="">
+        <div class="gallery-img" data-gallery="3"></div>
       </div>
 
       <div class="item">
-        <img src="g4.jpg" alt="">
+        <div class="gallery-img" data-gallery="4"></div>
       </div>
 
       <div class="item wide">
-        <img src="g5.jpg" alt="">
+        <div class="gallery-img" data-gallery="5"></div>
       </div>
 
     </div>
@@ -250,18 +250,13 @@
   </div>
 </section>
 
-<section class="partners">
+<section class="partners" id="contact">
 
   <div class="partners-container">
 
     <h2 class="partners-title">OUR PARTNERS</h2>
 
     <div class="partners-wrapper">
-
-      <!-- Background Image -->
-      <div class="partners-image">
-        <img src="assets/images/partners-bg.jpg" alt="">
-      </div>
 
       <!-- Left Card -->
       <div class="partner-card left">
@@ -275,14 +270,9 @@
         <a href="#" class="btn-partner">Learn More</a>
       </div>
 
-      <!-- Center Image -->
-       <div class="partners-image">
-        <img src="assets/images/partners-bg.jpg" alt="">
-    </div>
-
       <!-- Right Card -->
       <div class="partner-card right">
-        <img src="assets/images/monobuoy-logo.png" class="partner-logo" alt="">
+        <h3 class="brand">Monobuoy Company</h3>
         <p>
           EPC Solutions Are The Middle East Agents For The Monobuoy
           Company Who Design, Build And Install Turntable And Turret Type
@@ -298,6 +288,50 @@
 </section>
 
 
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>E<span>P</span>C Solutions</h3>
+        <p>Your Trusted Partner Delivering Engineering, Execution And Performance.</p>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Renewable Energy</a></li>
+          <li><a href="#">Project Services</a></li>
+          <li><a href="#">Filtration Services</a></li>
+          <li><a href="#">Terminal Services</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <ul>
+          <li>Email: info@epcsolutions.com</li>
+          <li>Phone: +1 (555) 123-4567</li>
+          <li>Address: 123 Business St, City</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 EPC Solutions. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 
   <!-- JS -->
   <script src="script.js"></script>
