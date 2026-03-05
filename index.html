@@ -3,301 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GPC Solutions</title>
+  <title>EPC Solutions - Renewable Energy</title>
 
-  <!-- Google Font -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section class="hero">
-    
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
     <!-- NAVBAR -->
     <nav class="navbar">
-      <div class="logo">G<span>P</span>C Solutions</div>
+      <!-- Logo -->
+      <div class="logo">
+        <div class="logo-letters">
+          <span class="letter-e">e</span><span class="letter-p">p</span><span class="letter-c">c</span>
+        </div>
+        <div class="logo-sub">SOLUTIONS</div>
+      </div>
 
+      <!-- Nav Links -->
       <ul class="nav-links" id="navLinks">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services ▼</a></li>
-        <li><a href="#">About Us ▼</a></li>
-        <li><a href="#" class="btn-contact">Contact Us</a></li>
+        <li><a href="#" class="nav-active">Home</a></li>
+        <li><a href="#">Services <span class="arrow">&#9662;</span></a></li>
+        <li><a href="#">About Us <span class="arrow">&#9662;</span></a></li>
+        <li><a href="#">Contact Us</a></li>
       </ul>
 
+      <!-- Contact Button -->
+      <a href="#" class="btn-contact">Contact Us</a>
+
+      <!-- Mobile Toggle -->
       <div class="menu-toggle" id="menuToggle">
-        ☰
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
 
-    <!-- HERO CONTENT -->
+    <!-- Hero Content -->
     <div class="hero-content">
-      <h1>
-        Engineered Solutions.<br>
-        Proven Delivery
-      </h1>
-      <p>
-        Your Trusted Partner Delivering Engineering, Execution And Performance.
-      </p>
+      <h1>Renewable Energy</h1>
     </div>
 
-</section>
+    <!-- Wind Turbines Silhouette (SVG) -->
+    <div class="hero-turbines">
+      <svg viewBox="0 0 1400 350" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+        <!-- Water/reflection base -->
+        <defs>
+          <linearGradient id="waterGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(180,160,180,0.3)"/>
+            <stop offset="100%" stop-color="rgba(100,80,120,0.5)"/>
+          </linearGradient>
+          <linearGradient id="poleGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#555"/>
+            <stop offset="70%" stop-color="#c87020"/>
+            <stop offset="100%" stop-color="#d4943a"/>
+          </linearGradient>
+          <linearGradient id="skyGlow" x1="0.5" y1="0" x2="0.5" y2="1">
+            <stop offset="0%" stop-color="rgba(255,200,100,0.4)"/>
+            <stop offset="100%" stop-color="rgba(255,200,100,0)"/>
+          </linearGradient>
+        </defs>
 
-<section class="about">
-  <div class="about-container">
+        <!-- Water line -->
+        <rect x="0" y="260" width="1400" height="90" fill="url(#waterGrad)" opacity="0.5"/>
 
-    <!-- Images Side -->
-    <div class="about-images">
-      <div class="image-main">
-        <img src="about1.jpg" alt="Team Engineers">
-      </div>
+        <!-- Turbine 1 (far left, small) -->
+        <g class="turbine" transform="translate(60, 0)">
+          <rect x="28" y="120" width="4" height="145" fill="url(#poleGrad)"/>
+          <circle cx="30" cy="120" r="5" fill="#ccc"/>
+          <line x1="30" y1="120" x2="30" y2="50" stroke="#888" stroke-width="2.5"/>
+          <line x1="30" y1="120" x2="85" y2="155" stroke="#888" stroke-width="2.5"/>
+          <line x1="30" y1="120" x2="-25" y2="155" stroke="#888" stroke-width="2.5"/>
+          <!-- Reflection -->
+          <rect x="28" y="265" width="4" height="60" fill="url(#poleGrad)" opacity="0.15"/>
+        </g>
 
-      <div class="image-small">
-        <img src="about2.jpg" alt="Project Planning">
-      </div>
+        <!-- Turbine 2 -->
+        <g class="turbine" transform="translate(160, 0)">
+          <rect x="28" y="90" width="5" height="175" fill="url(#poleGrad)"/>
+          <circle cx="30" cy="90" r="6" fill="#ccc"/>
+          <line x1="30" y1="90" x2="30" y2="5" stroke="#888" stroke-width="2.8"/>
+          <line x1="30" y1="90" x2="95" y2="130" stroke="#888" stroke-width="2.8"/>
+          <line x1="30" y1="90" x2="-35" y2="130" stroke="#888" stroke-width="2.8"/>
+          <rect x="28" y="265" width="5" height="70" fill="url(#poleGrad)" opacity="0.15"/>
+        </g>
+
+        <!-- Turbine 3 -->
+        <g class="turbine" transform="translate(290, 0)">
+          <rect x="28" y="80" width="5" height="185" fill="url(#poleGrad)"/>
+          <circle cx="30" cy="80" r="6" fill="#ccc"/>
+          <line x1="30" y1="80" x2="30" y2="-10" stroke="#888" stroke-width="3"/>
+          <line x1="30" y1="80" x2="100" y2="125" stroke="#888" stroke-width="3"/>
+          <line x1="30" y1="80" x2="-40" y2="125" stroke="#888" stroke-width="3"/>
+          <rect x="28" y="265" width="5" height="70" fill="url(#poleGrad)" opacity="0.15"/>
+        </g>
+
+        <!-- Turbine 4 (center-left, tall) -->
+        <g class="turbine" transform="translate(420, 0)">
+          <rect x="28" y="60" width="6" height="205" fill="url(#poleGrad)"/>
+          <circle cx="31" cy="60" r="7" fill="#ccc"/>
+          <line x1="31" y1="60" x2="31" y2="-35" stroke="#888" stroke-width="3"/>
+          <line x1="31" y1="60" x2="110" y2="110" stroke="#888" stroke-width="3"/>
+          <line x1="31" y1="60" x2="-48" y2="110" stroke="#888" stroke-width="3"/>
+          <rect x="28" y="265" width="6" height="75" fill="url(#poleGrad)" opacity="0.15"/>
+        </g>
+
+        <!-- Turbine 5 (center) -->
+        <g class="turbine" transform="translate(570, 0)">
+          <rect x="28" y="70" width="5" height="195" fill="url(#poleGrad)"/>
+          <circle cx="30" cy="70" r="6" fill="#ccc"/>
+          <line x1="30" y1="70" x2="30" y2="-20" stroke="#888" stroke-width="3"/>
+          <line x1="30" y1="70" x2="100" y2="115" stroke="#888" stroke-width="3"/>
+          <line x1="30" y1="70" x2="-40" y2="115" stroke="#888" stroke-width="3"/>
+          <rect x="28" y="265" width="5" height="70" fill="url(#poleGrad)" opacity="0.15"/>
+        </g>
+
+        <!-- Turbine 6 -->
+        <g class="turbine" transform="translate(720, 0)">
+          <rect x="28" y="85" width="5" height="180" fill="url(#poleGrad)"/>
+          <circle cx="30" cy="85" r="6" fill="#ccc"/>
+          <line x1="30" y1="85" x2="30" y2="0" stroke="#888" stroke-width="2.8"/>
+          <line x1="30" y1="85" x2="95" y2="125" stroke="#888" stroke-width="2.8"/>
+          <line x1="30" y1="85" x2="-35" y2="125" stroke="#888" stroke-width="2.8"/>
+          <rect x="28" y="265" width="5" height="70" fill="url(#poleGrad)" opacity="0.15"/>
+        </g>
+
+        <!-- Turbine 7 -->
+        <g class="turbine" transform="translate(870, 0)">
+          <rect x="28" y="95" width="5" height="170" fill="url(#poleGrad)"/>
+          <circle cx="30" cy="95" r="6" fill="#ccc"/>
+          <line x1="30" y1="95" x2="30" y2="10" stroke="#888" stroke-width="2.8"/>
+          <line x1="30" y1="95" x2="95" y2="135" stroke="#888" stroke-width="2.8"/>
+          <line x1="30" y1="95" x2="-35" y2="135" stroke="#888" stroke-width="2.8"/>
+          <rect x="28" y="265" width="5" height="65" fill="url(#poleGrad)" opacity="0.15"/>
+        </g>
+
+        <!-- Turbine 8 -->
+        <g class="turbine" transform="translate(1010, 0)">
+          <rect x="28" y="100" width="5" height="165" fill="url(#poleGrad)"/>
+          <circle cx="30" cy="100" r="5" fill="#ccc"/>
+          <line x1="30" y1="100" x2="30" y2="20" stroke="#888" stroke-width="2.5"/>
+          <line x1="30" y1="100" x2="90" y2="138" stroke="#888" stroke-width="2.5"/>
+          <line x1="30" y1="100" x2="-30" y2="138" stroke="#888" stroke-width="2.5"/>
+          <rect x="28" y="265" width="5" height="60" fill="url(#poleGrad)" opacity="0.15"/>
+        </g>
+
+        <!-- Turbine 9 (far right, small) -->
+        <g class="turbine" transform="translate(1140, 0)">
+          <rect x="28" y="110" width="4" height="155" fill="url(#poleGrad)"/>
+          <circle cx="30" cy="110" r="5" fill="#ccc"/>
+          <line x1="30" y1="110" x2="30" y2="35" stroke="#888" stroke-width="2.5"/>
+          <line x1="30" y1="110" x2="85" y2="145" stroke="#888" stroke-width="2.5"/>
+          <line x1="30" y1="110" x2="-25" y2="145" stroke="#888" stroke-width="2.5"/>
+          <rect x="28" y="265" width="4" height="55" fill="url(#poleGrad)" opacity="0.15"/>
+        </g>
+
+        <!-- Turbine 10 -->
+        <g class="turbine" transform="translate(1260, 0)">
+          <rect x="28" y="120" width="4" height="145" fill="url(#poleGrad)"/>
+          <circle cx="30" cy="120" r="5" fill="#ccc"/>
+          <line x1="30" y1="120" x2="30" y2="50" stroke="#888" stroke-width="2.5"/>
+          <line x1="30" y1="120" x2="80" y2="152" stroke="#888" stroke-width="2.5"/>
+          <line x1="30" y1="120" x2="-20" y2="152" stroke="#888" stroke-width="2.5"/>
+          <rect x="28" y="265" width="4" height="50" fill="url(#poleGrad)" opacity="0.15"/>
+        </g>
+
+        <!-- Horizon line -->
+        <line x1="0" y1="265" x2="1400" y2="265" stroke="rgba(200,180,200,0.3)" stroke-width="1"/>
+      </svg>
     </div>
 
-    <!-- Content Side -->
-    <div class="about-content">
-      <h2>About EPC Solutions</h2>
+    <!-- Sun glow -->
+    <div class="sun-glow"></div>
 
-      <p>
-        EPC Solutions is a services and consultancy company that provides 
-        construction and project management support to the energy, offshore 
-        and marine sectors. No matter its size or complexity, our multi-discipline 
-        team of industry professionals ensure that your project is delivered in 
-        line with your requirements, budget and timeline.
-      </p>
-
-      <p>
-        Our range of services and resources guarantees the successful execution 
-        of offshore and onshore projects.
-      </p>
-
-      <a href="#" class="btn-primary">Get Started</a>
-    </div>
-
-    </div>
-</section>
-
-<section class="services">
-
-  <div class="services-overlay"></div>
-
-  <div class="services-container">
-    
-    <div class="section-title">
-      <span>Our Services</span>
-      <h2>
-        High Performance Supply & Services <br>
-        For Multiple Industries!
-      </h2>
-    </div>
-
-    <div class="services-grid">
-
-      <!-- Card 1 -->
-      <div class="service-card">
-        <img src="service1.jpg" alt="">
-        <div class="card-content">
-          <h3>Renewable Energy</h3>
-          <p>
-            EPC Solutions provides Project Risk Management services for floating offshore wind energy projects.
-          </p>
-          <a href="#">Learn More →</a>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="service-card">
-        <img src="service2.jpg" alt="">
-        <div class="card-content">
-          <h3>Project Services</h3>
-          <p>
-            Engineering, procurement and construction services with support through every phase.
-          </p>
-          <a href="#">Learn More →</a>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="service-card">
-        <img src="service3.jpg" alt="">
-        <div class="card-content">
-          <h3>Filtration Services</h3>
-          <p>
-            Middle East agent for Amazon Filters Ltd for oil, gas and water treatment process business.
-          </p>
-          <a href="#">Learn More →</a>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="service-card">
-        <img src="service4.jpg" alt="">
-        <div class="card-content">
-          <h3>Terminal Services</h3>
-          <p>
-            Full range of CALM buoy and terminal services across the Middle East region.
-          </p>
-          <a href="#">Learn More →</a>
-        </div>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="service-card">
-        <img src="service5.jpg" alt="">
-        <div class="card-content">
-          <h3>Agency Services</h3>
-          <p>
-            Engineering, procurement and construction services to energy and marine sectors.
-          </p>
-          <a href="#">Learn More →</a>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="work">
-  <div class="container">
-
-    <div class="work-title">
-      <h2>How We Work</h2>
-    </div>
-
-    <div class="work-steps">
-
-      <div class="step">
-        <div class="icon">
-          <img src="assets/icons/design.png" alt="">
-        </div>
-        <p>Design Review & Validation</p>
-      </div>
-
-      <div class="step">
-        <div class="icon">
-          <img src="assets/icons/strategy.png" alt="">
-        </div>
-        <p>Build Strategy Development</p>
-      </div>
-
-      <div class="step">
-        <div class="icon">
-          <img src="assets/icons/location.png" alt="">
-        </div>
-        <p>Build Location Selection</p>
-      </div>
-
-      <div class="step">
-        <div class="icon">
-          <img src="assets/icons/vendor.png" alt="">
-        </div>
-        <p>Vendor & Sub Contractor Selection</p>
-      </div>
-
-      <div class="step">
-        <div class="icon">
-          <img src="assets/icons/materials.png" alt="">
-        </div>
-        <p>Materials & Process Optimization</p>
-      </div>
-
-      <div class="step">
-        <div class="icon">
-          <img src="assets/icons/risk.png" alt="">
-        </div>
-        <p>Risk & Contingency Planning</p>
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- Custom Gallery -->
-    <div class="work-gallery-grid">
-
-      <div class="item large">
-        <img src="g1.jpg" alt="">
-        <div class="circle-btn">↗</div>
-      </div>
-
-      <div class="item">
-        <img src="g2.jpg" alt="">
-      </div>
-
-      <div class="item">
-        <img src="g3.jpg" alt="">
-      </div>
-
-      <div class="item">
-        <img src="g4.jpg" alt="">
-      </div>
-
-      <div class="item wide">
-        <img src="g5.jpg" alt="">
-      </div>
-
-    </div>
-
-    <!-- Button -->
-    <div class="work-btn">
-      <a href="#" class="btn-outline">CONNECT WITH US</a>
-    </div>
-
-  </div>
-</section>
-
-<section class="partners">
-
-  <div class="partners-container">
-
-    <h2 class="partners-title">OUR PARTNERS</h2>
-
-    <div class="partners-wrapper">
-
-      <!-- Background Image -->
-      <div class="partners-image">
-        <img src="assets/images/partners-bg.jpg" alt="">
-      </div>
-
-      <!-- Left Card -->
-      <div class="partner-card left">
-        <h3 class="brand red">Amazon Filters</h3>
-        <p>
-          EPC Solutions Are The Middle East Agents For Amazon Filters Ltd
-          For Its Oil And Gas And Associated Water Treatment Process
-          Business Providing An Extensive Range Of Pleated, Depth And Bag
-          Filters For Liquids, Gases And Air.
-        </p>
-        <a href="#" class="btn-partner">Learn More</a>
-      </div>
-
-      <!-- Center Image -->
-       <div class="partners-image">
-        <img src="assets/images/partners-bg.jpg" alt="">
-    </div>
-
-      <!-- Right Card -->
-      <div class="partner-card right">
-        <img src="assets/images/monobuoy-logo.png" class="partner-logo" alt="">
-        <p>
-          EPC Solutions Are The Middle East Agents For The Monobuoy
-          Company Who Design, Build And Install Turntable And Turret Type
-          CALM Buoys.
-        </p>
-        <a href="#" class="btn-partner">Learn More</a>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
+  </section>
 
   <!-- JS -->
   <script src="script.js"></script>
